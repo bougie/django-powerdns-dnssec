@@ -134,8 +134,10 @@ INSTALLED_APPS = (
     'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_swagger',
+    'bootstrap3',
     'powerdns',
     'dnsaas',
+    'django_admin_bootstrapped',
     'django.contrib.admin',
     'django.contrib.admindocs',
 )
@@ -203,3 +205,10 @@ try:
     from settings_local import *  # noqa
 except:
     pass
+
+from django.contrib import messages
+MESSAGE_TAGS = {
+    messages.SUCCESS: 'alert-success success',
+    messages.WARNING: 'alert-warning warning',
+    messages.ERROR: 'alert-danger error'
+}

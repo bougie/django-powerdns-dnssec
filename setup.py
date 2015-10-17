@@ -59,6 +59,8 @@ setup(
         'django-rest-swagger>=0.3.2',
         'django-filter>=0.10.0',
         'docutils>=0.12',
+        'django-admin-bootstrapped>=2.5.6',
+        'django-bootstrap3>=6.2.2',
     ],
     zip_safe = False,  # if only because of the readme file
 )
