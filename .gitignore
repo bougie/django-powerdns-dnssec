@@ -1,0 +1,7 @@
+.coverage
+.ropeproject
+build
+dist
+__pycache__
+*.egg-info
+local_settings.py
